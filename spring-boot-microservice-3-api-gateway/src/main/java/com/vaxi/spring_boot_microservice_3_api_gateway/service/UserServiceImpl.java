@@ -38,10 +38,6 @@ public class UserServiceImpl implements UserService {
         return userRepository.findByUsername(username);
     }
 
-    @Override
-    public void updateUserRole(String username, String role) {
-        userRepository.updateUserRole(username, role);
-    }
 
     @Override
     @Transactional
