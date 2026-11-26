@@ -10,7 +10,7 @@ import com.vaxi.spring_boot_microservice_2_compra.repository.CompraRepository;
 
 @Service 
 public class CompraServiceImpl implements CompraService{
-    private CompraRepository compraRepository;
+    private final CompraRepository compraRepository;
 
     public CompraServiceImpl(CompraRepository compraRepository) {
         this.compraRepository = compraRepository;
